@@ -1,0 +1,15 @@
+import random
+from datetime import datetime
+boys = ["Ali", "Reza", "Omid", "Hassan"]
+girls = ["Sara", "Neda", "Maryam", "Arezoo"]
+blind_dates = []
+while boys and girls:
+    boy = random.choice(boys)
+    girl = random.choice(girls)
+    boys.remove(boy)
+    girls.remove(girl)
+    date_time = datetime.now()
+    blind_dates.append((boy, girl, date_time))
+print("Generated blind dates:")
+for boy, girl, dt in blind_dates:
+    print(f"{boy} - {girl} at {dt}")
