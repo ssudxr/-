@@ -1,0 +1,11 @@
+import random
+a=1
+while True:
+    b=random.randit(1,6)
+    c=int(input("adad bede")
+    if b==c:
+        print("you win",a,"times")
+        break
+    else:        
+         print("you failed")
+         a+=1
